@@ -1,0 +1,128 @@
+/* GENERIC BODY STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFF00;
+    color: #0a0a0a;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* STYLING FOR THE HEADER */
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 3rem;
+    height: max-content;
+}
+
+.header-logo {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-navbar {
+    margin-left: auto;
+}
+
+.header-navbar > ul {
+    display: flex;
+    gap: 2rem;
+    font-weight: bold;
+}
+
+/* STYLING THE CONTENT OF THE WELCOME PAGE */
+
+.welcome-container {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.welcome-container ul {
+    list-style-type: none;
+}
+
+.welcome-container a {
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+
+.welcome-section {
+    width: 100%;
+    margin: 8rem auto 0 auto;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.welcome-section p {
+    font-size: 1.5rem;
+    margin: 1.5rem 15%;
+    width: 70%;
+}
+
+.welcome-section button {
+    border: none;
+    width: 180px;
+    padding: 15px 0;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+
+.welcome-section i {
+    color: white;
+    background-color: black;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 820px) {
+    .welcome-container {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .welcome-section {
+        margin: 6rem auto 0 auto;
+    }
+
+    .welcome-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .welcome-section p {
+        font-size: 1.2rem;
+        margin: 3rem 15%;
+    }
+
+    .welcome-section button {
+        width: 110px;
+        font-size: 0.8rem;
+        margin-top: 30px;
+    }
+
+    .welcome-section i {
+        margin-right: 5px;
+    }
+  
+    .header-navbar > ul {
+        display: flex;
+        gap: 1rem;
+        font-weight: bold;
+    }
+}
