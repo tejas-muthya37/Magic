@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../Homepage/homepage.css" rel="stylesheet" />
+    <link href="../Component-Page/component-page.css" rel="stylesheet" />
+    <link href="badge.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-logo"><a href="../index.html">magic!</a></div>
+        <div class="header-navbar">
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Examples</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="page-body">
+        <div class="page-sidebar">
+          <div class="sidebar-topic">Get Started</div>
+          <ul class="sidebar-subtopic">
+            <li><a href="/../Homepage/homepage.html">Introduction</a></li>
+            <li><a href="#">Guide</a></li>
+            <li><a href="#">The Magician</a></li>
+          </ul>
+          <div class="sidebar-topic">Components</div>
+          <ul class="sidebar-subtopic">
+            <li><a href="#">Alerts</a></li>
+            <li><a href="../Avatar/avatar.html">Avatars</a></li>
+            <li><a href="../Badge/badge.html">Badges</a></li>
+            <li><a href="#">Buttons</a></li>
+            <li><a href="#">Cards</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#">Inputs</a></li>
+          </ul>
+        </div>
+        <div class="page-content">
+          <h1>Badges</h1>
+          <p>
+            Badges are used to add additional information to any content. Use
+            the .badge class to add badges to your website.
+          </p>
+
+          <h1 class="sub-heading">Badges On Text Elements</h1>
+
+          <p>
+            There are 2 types of badges for text elements. Small and a Large
+            badge.
+          </p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <div class="badge">
+                <p>Text with a badge</p>
+                <span>4</span>
+              </div>
+              <div class="badge badge-lg">
+                <p>Text with a large badge</p>
+                <span>1</span>
+              </div>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Text with a badge<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-lg"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Text with a large badge<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <h1 class="sub-heading">Badges On Buttons</h1>
+
+          <p>
+            There are 2 types of badges for buttons. Normal and a Toggling
+            badge.
+          </p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <div class="badge badge-left">
+                <button>Action</button>
+                <span>8</span>
+              </div>
+              <div class="badge badge-toggle">
+                <button>Hide</button>
+                <span>7</span>
+              </div>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-left"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge badge-toggle"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Hide<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>7<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- Add the below code to your .js file or &lt;script&gt; tag for the toggle to work --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">const</span> toggleButton = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">".badge-toggle &gt; button"</span>);
+    <span class="hljs-keyword">const</span> toggleBadge = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">".badge-toggle span"</span>);
+    toggleButton.addEventListener(<span class="hljs-string">"click"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      toggleBadge.classList.toggle(<span class="hljs-string">"hidden"</span>);
+    });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <h1 class="sub-heading">Badges On Icons</h1>
+
+          <p>
+            Badges on icons are generally used to show the count of a particular
+            event.
+          </p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <div class="badge">
+                <i class="fas fa-home fa-2x"></i>
+                <span>7</span>
+              </div>
+
+              <div class="badge">
+                <i class="fas fa-heart fa-2x"></i>
+                <span>8</span>
+              </div>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-home fa-2x"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>7<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-heart fa-2x"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <h1 class="sub-heading">Badges On Avatars</h1>
+
+          <p>Badges on avatars can be used to show the status of a user.</p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <div class="badge avatar-badge online">
+                <img class="avatar" src="../Media/img-1.jpg" alt="" />
+                <span></span>
+              </div>
+
+              <div class="badge avatar-badge offline">
+                <img class="avatar" src="../Media/img-1.jpg" alt="" />
+                <span></span>
+              </div>
+
+              <div class="badge avatar-badge busy">
+                <img class="avatar" src="../Media/img-1.jpg" alt="" />
+                <span></span>
+              </div>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge avatar-badge online"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"&lt;your-image-url-here&gt;"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"badge-1"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge avatar-badge offline"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"&lt;your-image-url-here&gt;"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"badge-2"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge avatar-badge busy"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"&lt;your-image-url-here&gt;"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"badge-2"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+          <span class="last"
+            ><a href="../Avatar/avatar.html">&lt; Avatars</a></span
+          >
+          <span class="next"><a href="#">Buttons &gt;</a></span>
+        </div>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+      const toggleButton = document.querySelector(".badge-toggle > button");
+      const toggleBadge = document.querySelector(".badge-toggle span");
+      toggleButton.addEventListener("click", function () {
+        toggleBadge.classList.toggle("hidden");
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/6bba1b5d71.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
