@@ -1,5 +1,10 @@
 /* GENERIC BODY STYLING */
 
+:root {
+    --body-bg: #FFFF00;
+    --body-font-color: #0a0a0a;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +12,8 @@
 }
 
 body {
-    background-color: #FFFF00;
-    color: #0a0a0a;
+    background-color: var(--body-bg);
+    color: var(--body-font-color);
     font-family: 'Nunito', sans-serif;
 }
 

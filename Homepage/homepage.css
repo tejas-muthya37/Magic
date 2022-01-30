@@ -1,5 +1,12 @@
 /* GENERIC BODY STYLING */
 
+:root {
+    --body-bg: #FFFF00;
+    --anchor-hover-color: #0a0a0a;
+    --code-example-bg: #282c34;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +14,7 @@
 }
 
 body {
-    background-color: #FFFF00;
+    background-color: var(--body-bg);
     color: #0a0a0a;
     font-family: 'Nunito', sans-serif;
 }
@@ -86,7 +93,7 @@ body {
     position: absolute;
     width: 0;
     height: 1px;
-    background-color: #0a0a0a;
+    background-color: var(--anchor-hover-color);
     left: 0;
     bottom: -3px;
     transition: 0.3s;
@@ -158,7 +165,7 @@ ul {
     align-items: center;
     justify-content: center;
     overflow-x: scroll;
-    background-color: #282c34;
+    background-color: var(--code-example-bg);
     color: silver;
     border-radius: 5px;
     margin-top: -1rem;
