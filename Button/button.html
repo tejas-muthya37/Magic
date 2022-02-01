@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic - CSS Component Library</title>
+    <link href="../Homepage/homepage.css" rel="stylesheet" />
+    <link href="../Component-Page/component-page.css" rel="stylesheet" />
+    <link href="button.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-logo"><a href="../index.html">magic!</a></div>
+        <nav class="header-navbar">
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Examples</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="page-body">
+        <aside class="page-sidebar">
+          <div class="sidebar-topic">Get Started</div>
+          <ul class="sidebar-subtopic">
+            <li><a href="homepage.html">Introduction</a></li>
+            <li><a href="#">Guide</a></li>
+            <li><a href="#">The Magician</a></li>
+          </ul>
+          <div class="sidebar-topic">Components</div>
+          <ul class="sidebar-subtopic">
+            <li><a href="../Alert/alert.html">Alerts</a></li>
+            <li><a href="../Avatar/avatar.html">Avatars</a></li>
+            <li><a href="../Badge/badge.html">Badges</a></li>
+            <li><a href="../Button/button.html">Buttons</a></li>
+            <li><a href="../Card/card.html">Cards</a></li>
+            <li><a href="../Image/image.html">Images</a></li>
+            <li><a href="../Input/input.html">Inputs</a></li>
+          </ul>
+        </aside>
+        <div class="page-content">
+          <h1>Buttons</h1>
+          <p>
+            Buttons. Need we say anything more? ;) Use the .btn class to add our
+            buttons to your website.
+          </p>
+
+          <h1 class="sub-heading">Primary Buttons</h1>
+
+          <p>
+            Primary Buttons are used to draw attention to your Primary CTAs.
+          </p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <button class="btn btn-primary">Primary</button>
+              <button class="btn btn-primary btn-outline">Primary</button>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary btn-outline"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <h1 class="sub-heading">Link Buttons</h1>
+
+          <p>
+            The purpose of a Link Button is to navigate the user to the
+            respective endpoint.
+          </p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <button class="btn btn-link">
+                <a href="#">Link</a>
+              </button>
+              <button class="btn btn-link btn-outline">
+                <a href="#">Link</a>
+              </button>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-link"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-link btn-outline"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <h1 class="sub-heading">Icon Buttons</h1>
+
+          <p>Buttons with icons can be used to convey what the button does.</p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <button class="btn btn-icon">
+                <i class="fa fa-leaf" aria-hidden="true"></i> Icon
+              </button>
+              <button class="btn btn-icon btn-outline">
+                <i class="fa fa-leaf" aria-hidden="true"></i> Icon
+              </button>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-icon"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-leaf"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> Icon
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-icon btn-outline"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-leaf"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> Icon
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <h1 class="sub-heading">Floating Action Button</h1>
+
+          <p>
+            A floating action button is used to perform a specific action across
+            the webpage.
+          </p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <button class="btn-floating-action">+</button>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn-floating-action"</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+          <span class="last"
+            ><a href="../Badge/badge.html">&lt; Badges</a></span
+          >
+          <span class="next"><a href="../Card/card.html">Cards &gt;</a></span>
+        </div>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script
+      src="https://kit.fontawesome.com/6bba1b5d71.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
