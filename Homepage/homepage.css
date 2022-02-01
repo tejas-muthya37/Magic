@@ -4,6 +4,7 @@
     --body-bg: #FFFF00;
     --anchor-hover-color: #0a0a0a;
     --code-example-bg: #282c34;
+    --logo-font: 'Gochi Hand', cursive;
 
 }
 
@@ -41,7 +42,7 @@ body {
 }
 
 .header-logo {
-    font-family: 'Gochi Hand', cursive;
+    font-family: var(--logo-font);
     font-size: 2rem;
     font-weight: bold;
 }
