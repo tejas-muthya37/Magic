@@ -1,0 +1,300 @@
+:root {
+    --hover-bg: #F0F0F0;
+    --anchor-hover-bg: #F0EFFF;
+}
+
+/* FOR CARDS WITH SHADOWS */
+
+.card-shadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* ELEMENT STYLING */
+
+.card img {
+    width: 100%;
+}
+
+.card a {
+    color: blueviolet;
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: grey;
+    letter-spacing: 0.3px;
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+.simple-card p {
+    color: black;
+}
+
+.card footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+    padding: 15px;
+}
+
+.footer-icon-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    font-size: 1.25rem;
+}
+
+.footer-anchor-group {
+    display: flex;
+    gap: 1rem;
+}
+
+/* HOVER EFFECTS */
+
+.hover:hover {
+    background-color: var(--hover-bg);
+}
+
+.card a:hover {
+    background-color: var(--anchor-hover-bg);
+}
+
+/* STYLES COMMON TO ALL CARDS */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    opacity: 1;
+    transition: opacity 0.1s ease-out;
+}
+
+
+.card .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    border-radius: inherit;
+}
+
+.card .text > h3 {
+    padding-bottom: 0.4rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+}
+
+.card .text > h4 {
+    color: grey;
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+.card i:nth-of-type(2), i:nth-of-type(3) {
+    -webkit-text-stroke: 1px whitesmoke;
+}
+
+/* STYLING FOR SPECIFIC SCENARIOS */
+
+.card .img-top-lg {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.card .text-top {
+    padding-top: 1.25rem;
+}
+
+.badge-card .badge-with-text {
+    position: relative;
+    display: grid;
+}
+
+.dismiss-card .dismiss-icon-with-text {
+    position: relative;
+    display: grid;
+}
+
+.badge-with-text > * {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.dismiss-icon-with-text > * {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+/* STYLING THE BADGE */
+
+.badge {
+    font-size: 0.8rem;
+    background-color: green;
+    height: max-content;
+    text-align: center;
+    padding: 5px;
+    color: whitesmoke;
+    margin-top: 1.25rem;
+    cursor: pointer;
+    width: 90px;
+    justify-self: end;
+}
+
+.dismiss {
+    height: max-content;
+    font-size: 2rem;
+    margin-top: 0.6rem;
+    text-align: center;
+    margin-right: 1rem;
+    cursor: pointer;
+    justify-self: end;
+    z-index: 1;
+}
+
+.reload {
+    justify-self: end;
+    font-size: 4rem;
+    position: absolute;
+    top: auto;
+    right: auto;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.dismissed { 
+    opacity: 0;
+}
+
+.reloaded { 
+    opacity: 1;
+}
+
+
+/* STYLING FOR HORIZONTAL CARD */
+
+.card-horizontal {
+    width: 400px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card-horizontal .img-horizontal {
+    width: 48%;
+    height: 32%;
+    border-top-left-radius: 5px;
+}
+
+.card-horizontal .text h3 {
+    font-size: 1rem;
+    text-align: right;
+}
+
+.card-horizontal .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    border-radius: inherit;
+}
+
+.card-horizontal .footer-anchor-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* STYLING FOR TEXT OVERLAY */
+
+.text-overlay .overlapping-media {
+    display: grid;
+    position: relative;
+}
+
+.overlapping-media img, .overlapping-media .text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.overlapping-media .text {
+    align-self: flex-end;
+}
+
+.overlapping-media > .text > h3, .overlapping-media > .text > h4 {
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 90%;
+    }
+
+    .card a {
+        padding: 0 5px;
+    }
+    
+    .card .text > h3 {
+        padding-right: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .card footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-icon-group {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+        font-size: 1.25rem;
+    }
+
+    .footer-anchor-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .dismiss {
+        font-size: 1.5rem;
+        margin-top: 0.8rem;
+    }
+
+    .badge {
+        position: absolute;
+        bottom: -1.6rem;
+        left: 0;
+        font-size: 0.7rem;
+        width: 80px;
+    }
+    
+    .card-horizontal .text {
+        display: none;
+    }
+
+    .card-horizontal {
+        width: 100%;
+    }
+
+    .card-horizontal .img-horizontal {
+        width: 100%;
+    }
+}
