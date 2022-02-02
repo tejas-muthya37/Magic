@@ -1,6 +1,6 @@
 /* GENERIC BODY STYLING */
 :root {
-    --body-bg: #FFFF00;
+    --body-bg: #cbc3e3;
     --anchor-hover-color: #0a0a0a;
     --code-example-bg: #282c34;
 
@@ -49,7 +49,7 @@ body {
     margin-left: auto;
 }
 
-.header-navbar > ul {
+.header-navbar>ul {
     display: flex;
     gap: 2rem;
     font-weight: bold;
@@ -110,7 +110,7 @@ body {
     width: 20%;
 }
 
-.page-sidebar > div,
+.page-sidebar>div,
 ul {
     padding-left: 10px;
 }
@@ -148,7 +148,7 @@ ul {
     padding: 0.75rem 0;
     font-weight: 700;
     font-size: 2rem;
-    margin-bottom: 1.5rem;                
+    margin-bottom: 1.5rem;
 }
 
 .page-content p {
@@ -204,7 +204,7 @@ ul {
         width: 100%;
     }
 
-    .header-navbar > ul {
+    .header-navbar>ul {
         display: flex;
         gap: 1rem;
         font-weight: bold;

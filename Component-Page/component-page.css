@@ -1,5 +1,5 @@
 :root {
-    --demo-div-bg: #ffef00;
+    --demo-div-bg: #bdb5d5;
     --code-example-bg: #282c34;
 }
 
@@ -41,7 +41,9 @@ h1.sub-heading {
 }
 
 @media screen and (max-width: 820px) {
-    .demo-div, .code-examples {
+
+    .demo-div,
+    .code-examples {
         width: 100%;
     }
 }
