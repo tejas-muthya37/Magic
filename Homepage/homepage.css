@@ -2,7 +2,7 @@
 
 :root {
     --body-bg: #FFFF00;
-    --anchor-hover-color: #0a0a0a;
+    --body-font-color: #0a0a0a;
     --code-example-bg: #282c34;
     --logo-font: 'Gochi Hand', cursive;
 
@@ -16,7 +16,7 @@
 
 body {
     background-color: var(--body-bg);
-    color: #0a0a0a;
+    color: var(--body-font-color);
     font-family: 'Nunito', sans-serif;
 }
 
@@ -94,7 +94,7 @@ body {
     position: absolute;
     width: 0;
     height: 1px;
-    background-color: var(--anchor-hover-color);
+    background-color: var(--body-font-color);
     left: 0;
     bottom: -3px;
     transition: 0.3s;
