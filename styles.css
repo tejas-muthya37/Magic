@@ -1,8 +1,8 @@
 /* GENERIC BODY STYLING */
 
 :root {
-    --body-bg: #cbc3e3;
-    --body-font-color: #0a0a0a;
+    --body-bg: #0a0a0a;
+    --body-color: whitesmoke;
 }
 
 * {
@@ -13,7 +13,7 @@
 
 body {
     background-color: var(--body-bg);
-    color: var(--body-font-color);
+    color: var(--body-color);
     font-family: 'Nunito', sans-serif;
 }
 
@@ -58,7 +58,7 @@ body {
 .welcome-container a {
     text-decoration: none;
     position: relative;
-    color: var(--body-font-color);
+    color: var(--body-color);
 }
 
 .welcome-section {
@@ -84,15 +84,16 @@ body {
     padding: 15px 0;
     font-size: 1.3rem;
     border-radius: 5px;
-    background-color: var(--body-font-color);
-    color: white;
+    background-color: var(--body-color);
+    color: var(--body-bg);
     margin: 20px 10px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .welcome-section i {
-    color: white;
-    background-color: var(--body-font-color);
+    color: var(--body-bg);
+    background-color: var(--body-color);
     margin-right: 15px;
 }
 
