@@ -1,7 +1,7 @@
 /* GENERIC BODY STYLING */
 :root {
     --body-bg: #FFFF00;
-    --anchor-hover-color: #0a0a0a;
+    --body-font-color: #0a0a0a;
     --code-example-bg: #282c34;
 
 }
@@ -14,7 +14,7 @@
 
 body {
     background-color: var(--body-bg);
-    color: #0a0a0a;
+    color: var(--body-font-color);
     font-family: 'Nunito', sans-serif;
 }
 
@@ -49,7 +49,7 @@ body {
     margin-left: auto;
 }
 
-.header-navbar > ul {
+.header-navbar>ul {
     display: flex;
     gap: 2rem;
     font-weight: bold;
@@ -76,7 +76,7 @@ body {
     text-decoration: none;
     position: relative;
     cursor: pointer;
-    color: black;
+    color: var(--body-font-color);
 }
 
 /* STYLING THE PAGE BODY THAT CONTAINS THE SIDEBAR AND THE CONTENT */
@@ -92,7 +92,7 @@ body {
     position: absolute;
     width: 0;
     height: 1px;
-    background-color: var(--anchor-hover-color);
+    background-color: var(--body-font-color);
     left: 0;
     bottom: -3px;
     transition: 0.3s;
@@ -110,7 +110,7 @@ body {
     width: 20%;
 }
 
-.page-sidebar > div,
+.page-sidebar>div,
 ul {
     padding-left: 10px;
 }
@@ -148,7 +148,7 @@ ul {
     padding: 0.75rem 0;
     font-weight: 700;
     font-size: 2rem;
-    margin-bottom: 1.5rem;                
+    margin-bottom: 1.5rem;
 }
 
 .page-content p {
@@ -204,7 +204,7 @@ ul {
         width: 100%;
     }
 
-    .header-navbar > ul {
+    .header-navbar>ul {
         display: flex;
         gap: 1rem;
         font-weight: bold;
