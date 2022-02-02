@@ -1,9 +1,8 @@
 /* GENERIC BODY STYLING */
 :root {
-    --body-bg: #cbc3e3;
-    --anchor-hover-color: #0a0a0a;
+    --body-bg: #0a0a0a;
+    --body-color: whitesmoke;
     --code-example-bg: #282c34;
-
 }
 
 * {
@@ -14,7 +13,7 @@
 
 body {
     background-color: var(--body-bg);
-    color: #0a0a0a;
+    color: var(--body-color);
     font-family: 'Nunito', sans-serif;
 }
 
@@ -76,7 +75,7 @@ body {
     text-decoration: none;
     position: relative;
     cursor: pointer;
-    color: black;
+    color: var(--body-color);
 }
 
 /* STYLING THE PAGE BODY THAT CONTAINS THE SIDEBAR AND THE CONTENT */
@@ -92,7 +91,7 @@ body {
     position: absolute;
     width: 0;
     height: 1px;
-    background-color: var(--anchor-hover-color);
+    background-color: var(--body-color);
     left: 0;
     bottom: -3px;
     transition: 0.3s;
@@ -127,7 +126,7 @@ ul {
 
 .sidebar-subtopic {
     margin-bottom: 1rem;
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 .sidebar-subtopic li {
@@ -155,6 +154,7 @@ ul {
     line-height: 35px;
     margin-bottom: 4rem;
     font-size: 1.05rem;
+    letter-spacing: 0.3px;
 }
 
 /* STYLING THE SECTION THAT DISPLAYS THE INSTALLATION LINK */

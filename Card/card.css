@@ -28,14 +28,14 @@
 
 .card p {
     font-size: 0.9rem;
-    color: grey;
+    /* color: grey; */
     letter-spacing: 0.3px;
     padding: 15px;
     margin-bottom: 0;
 }
 
 .simple-card p {
-    color: black;
+    color: var(--body-bg);
 }
 
 .card footer {
@@ -75,8 +75,9 @@
     display: flex;
     flex-direction: column;
     width: 23rem;
-    border-radius: 7px;
-    background-color: whitesmoke;
+    border-radius: 3px;
+    background-color: var(--body-color);
+    color: var(--body-bg);
     opacity: 1;
     transition: opacity 0.1s ease-out;
 }
@@ -90,28 +91,29 @@
     border-radius: inherit;
 }
 
-.card .text > h3 {
+.card .text>h3 {
     padding-bottom: 0.4rem;
     font-size: 1.2rem;
     letter-spacing: 0.8px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
-.card .text > h4 {
+.card .text>h4 {
     color: grey;
     font-weight: 200;
     font-size: 0.9rem;
 }
 
-.card i:nth-of-type(2), i:nth-of-type(3) {
+.card i:nth-of-type(2),
+i:nth-of-type(3) {
     -webkit-text-stroke: 1px whitesmoke;
 }
 
 /* STYLING FOR SPECIFIC SCENARIOS */
 
 .card .img-top-lg {
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 .card .text-top {
@@ -128,12 +130,12 @@
     display: grid;
 }
 
-.badge-with-text > * {
+.badge-with-text>* {
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
-.dismiss-icon-with-text > * {
+.dismiss-icon-with-text>* {
     grid-column: 1/2;
     grid-row: 1/2;
 }
@@ -175,11 +177,11 @@
     z-index: 0;
 }
 
-.dismissed { 
+.dismissed {
     opacity: 0;
 }
 
-.reloaded { 
+.reloaded {
     opacity: 1;
 }
 
@@ -199,7 +201,7 @@
 .card-horizontal .img-horizontal {
     width: 48%;
     height: 32%;
-    border-top-left-radius: 5px;
+    border-top-left-radius: 3px;
 }
 
 .card-horizontal .text h3 {
@@ -227,7 +229,8 @@
     position: relative;
 }
 
-.overlapping-media img, .overlapping-media .text {
+.overlapping-media img,
+.overlapping-media .text {
     grid-column: 1/2;
     grid-row: 1/2;
 }
@@ -236,7 +239,8 @@
     align-self: flex-end;
 }
 
-.overlapping-media > .text > h3, .overlapping-media > .text > h4 {
+.overlapping-media>.text>h3,
+.overlapping-media>.text>h4 {
     color: whitesmoke;
 }
 
@@ -248,8 +252,8 @@
     .card a {
         padding: 0 5px;
     }
-    
-    .card .text > h3 {
+
+    .card .text>h3 {
         padding-right: 1.2rem;
         font-size: 1rem;
     }
@@ -272,7 +276,7 @@
         justify-content: center;
         gap: 1rem;
     }
-    
+
     .dismiss {
         font-size: 1.5rem;
         margin-top: 0.8rem;
@@ -285,7 +289,7 @@
         font-size: 0.7rem;
         width: 80px;
     }
-    
+
     .card-horizontal .text {
         display: none;
     }
