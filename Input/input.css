@@ -4,7 +4,7 @@
     width: 250px;
 }
 
-.login-inputs > div {
+.login-inputs>div {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -12,6 +12,7 @@
 
 .login-inputs label {
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .login-inputs input {
@@ -21,7 +22,7 @@
 }
 
 #password {
-   border: 1px solid red;
+    border: 1px solid red;
 }
 
 #password-label {
@@ -33,7 +34,8 @@
     color: red;
 }
 
-.radio-input-group, .checkbox-input-group {
+.radio-input-group,
+.checkbox-input-group {
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -42,17 +44,21 @@
     font-size: 1rem;
 }
 
-.radio-input-group div, .checkbox-input-group div {
+.radio-input-group div,
+.checkbox-input-group div {
     display: flex;
     align-items: center;
 }
 
-.radio-input-group label, .checkbox-input-group label {
+.radio-input-group label,
+.checkbox-input-group label {
     margin-right: 10px;
 }
 
 @media screen and (max-width: 500px) {
-    .radio-input-group, .checkbox-input-group {
+
+    .radio-input-group,
+    .checkbox-input-group {
         gap: 1rem;
         flex-direction: column;
         justify-content: flex-start;
