@@ -78,7 +78,7 @@ body {
     text-decoration: none;
     position: relative;
     cursor: pointer;
-    color: black;
+    color: var(--body-font-color);
 }
 
 /* STYLING THE PAGE BODY THAT CONTAINS THE SIDEBAR AND THE CONTENT */
