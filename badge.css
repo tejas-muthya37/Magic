@@ -1,5 +1,6 @@
 :root {
-    --badge-bg: rebeccapurple;
+    --badge-bg: red;
+    --badge-color: white;
     --online-bg: green;
     --offline-bg: grey;
     --busy-bg: red;
@@ -18,14 +19,14 @@
 
 /* STYLING THE DIFFERENT KINDS OF BADGES */
 
-.badge > span {
+.badge>span {
     position: absolute;
     top: 0;
     right: 0;
     background-color: var(--badge-bg);
     height: 18px;
     width: 18px;
-    color: whitesmoke;
+    color: var(--badge-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,8 +34,8 @@
     font-size: small;
 }
 
-.badge > button {
-    padding: 8px;
+.badge>button {
+    padding: 0.5rem;
     width: 100px;
     border-radius: 5px;
     border: none;
@@ -44,35 +45,37 @@
     font-size: 1rem;
 }
 
-.badge > p {
+.badge>p {
     padding: 0.25rem 0.75rem 0 0;
     margin-bottom: 0;
 }
 
-.badge > i {
+.badge>i {
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.badge-left,
+.badge-toggle {
     padding: 10px;
 }
 
-.badge-left, .badge-toggle {
-    padding: 10px;
-}
-
-.badge-lg > span {
+.badge-lg>span {
     height: 25px;
     width: 25px;
     font-size: large;
 }
 
-.badge-lg > p {
+.badge-lg>p {
     padding: 12px 22px 0 0;
 }
 
-.badge-left > span {
+.badge-left>span {
     top: 0;
     left: 0;
 }
 
-.avatar { 
+.avatar {
     border-radius: 100%;
     height: 40px;
     width: 40px;
@@ -83,7 +86,7 @@
     width: 12px;
     top: 30px;
     bottom: 0;
-    right: 0; 
+    right: 0;
 }
 
 .avatar-badge.online span {
