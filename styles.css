@@ -74,14 +74,14 @@ body {
 
 .welcome-section p {
     font-size: 1.5rem;
-    margin: 1.5rem 15%;
-    width: 70%;
+    margin: 1.5rem auto;
+    width: 60%;
 }
 
 .welcome-section button {
     border: none;
-    width: 180px;
-    padding: 15px 0;
+    width: 11.25rem;
+    padding: 1rem 0;
     font-size: 1.3rem;
     border-radius: 5px;
     background-color: var(--body-color);
@@ -94,10 +94,10 @@ body {
 .welcome-section i {
     color: var(--body-bg);
     background-color: var(--body-color);
-    margin-right: 15px;
+    margin-right: 1rem;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 888px) {
     .welcome-container {
         width: 90%;
         margin: 2rem auto;
@@ -113,22 +113,33 @@ body {
 
     .welcome-section p {
         font-size: 1.2rem;
-        margin: 3rem 15%;
+        margin: 3rem auto;
+        width: 70%;
     }
 
     .welcome-section button {
-        width: 110px;
-        font-size: 0.8rem;
-        margin-top: 30px;
+        width: 9rem;
+        font-size: 0.9rem;
+        margin-top: 2rem;
     }
 
     .welcome-section i {
-        margin-right: 5px;
+        margin-right: 0.75rem;
     }
 
     .header-navbar>ul {
         display: flex;
         gap: 1rem;
         font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 473px) {
+    .welcome-section h1 {
+        font-size: 1.3rem;
+    }
+
+    .welcome-section p {
+        width: 100%;
     }
 }
