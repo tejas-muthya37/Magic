@@ -18,7 +18,7 @@
 
 /* STYLING THE DIFFERENT KINDS OF BADGES */
 
-.badge > span {
+.badge>span {
     position: absolute;
     top: 0;
     right: 0;
@@ -33,7 +33,7 @@
     font-size: small;
 }
 
-.badge > button {
+.badge>button {
     padding: 8px;
     width: 100px;
     border-radius: 5px;
@@ -44,35 +44,36 @@
     font-size: 1rem;
 }
 
-.badge > p {
+.badge>p {
     padding: 0.25rem 0.75rem 0 0;
     margin-bottom: 0;
 }
 
-.badge > i {
+.badge>i {
     padding: 10px;
 }
 
-.badge-left, .badge-toggle {
+.badge-left,
+.badge-toggle {
     padding: 10px;
 }
 
-.badge-lg > span {
+.badge-lg>span {
     height: 25px;
     width: 25px;
     font-size: large;
 }
 
-.badge-lg > p {
+.badge-lg>p {
     padding: 12px 22px 0 0;
 }
 
-.badge-left > span {
+.badge-left>span {
     top: 0;
     left: 0;
 }
 
-.avatar { 
+.avatar {
     border-radius: 100%;
     height: 40px;
     width: 40px;
@@ -83,7 +84,7 @@
     width: 12px;
     top: 30px;
     bottom: 0;
-    right: 0; 
+    right: 0;
 }
 
 .avatar-badge.online span {

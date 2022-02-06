@@ -1,4 +1,4 @@
-.avatar { 
+.avatar {
     border-radius: 100%;
     height: 50px;
     width: 50px;
@@ -6,7 +6,7 @@
 
 /* MEDIUM SIZED AVATAR */
 
-.avatar.md { 
+.avatar.md {
     height: 50px;
     width: 50px;
 }
