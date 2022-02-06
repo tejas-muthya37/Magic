@@ -1,13 +1,13 @@
 .login-inputs {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 15.5rem;
 }
 
 .login-inputs>div {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .login-inputs label {
@@ -16,7 +16,7 @@
 }
 
 .login-inputs input {
-    height: 25px;
+    height: 1.5rem;
     outline: none;
     border: none;
 }
@@ -40,7 +40,7 @@
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     font-size: 1rem;
 }
 
