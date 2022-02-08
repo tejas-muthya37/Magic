@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic - CSS Component Library</title>
+    <link href="../Homepage/homepage.css" rel="stylesheet" />
+    <link href="../Component-Page/component-page.css" rel="stylesheet" />
+    <link href="image.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-logo"><a href="../index.html">magic!</a></div>
+        <nav class="header-navbar">
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Examples</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="page-body">
+        <aside class="page-sidebar">
+          <div class="sidebar-topic">Get Started</div>
+          <ul class="sidebar-subtopic">
+            <li><a href="../Homepage/homepage.html">Introduction</a></li>
+            <li><a href="#">Guide</a></li>
+            <li><a href="#">The Magician</a></li>
+          </ul>
+          <div class="sidebar-topic">Components</div>
+          <ul class="sidebar-subtopic">
+            <li><a href="../Alert/alert.html">Alerts</a></li>
+            <li><a href="../Avatar/avatar.html">Avatars</a></li>
+            <li><a href="../Badge/badge.html">Badges</a></li>
+            <li><a href="../Button/button.html">Buttons</a></li>
+            <li><a href="../Card/card.html">Cards</a></li>
+            <li><a href="../Image/image.html">Images</a></li>
+            <li><a href="../Input/input.html">Inputs</a></li>
+          </ul>
+        </aside>
+        <div class="page-content">
+          <h1>Images</h1>
+          <p>
+            Images can add great value to the aesthetics of a website. Use the
+            .image class to add our images to your website.
+          </p>
+
+          <h1 class="sub-heading">Simple Image</h1>
+
+          <p>A simple image of 150x150 pixels.</p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <img class="image" src="../Media/img-1.jpg" alt="" />
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"&lt;your-image-url-here&gt;"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"img-1"</span> /&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <h1 class="sub-heading">Circular Image</h1>
+
+          <p>Circular images are often used as profile pictures.</p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <img class="image circle" src="../Media/img-2.jpg" alt="" />
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image circle"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"&lt;your-image-url-here&gt;"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"img-2"</span> /&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <h1 class="sub-heading">Resizable Image</h1>
+
+          <p>
+            Resizable images automatically change their height and width
+            according to the screen size.
+          </p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <img class="image resizable" src="../Media/img-3.jpg" alt="" />
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image resizable"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"&lt;your-image-url-here&gt;"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"img-3"</span> /&gt;</span>
+            </code>
+            </pre>
+          </div>
+          <span class="last"><a href="../Card/card.html">&lt; Cards</a></span>
+          <span class="next"><a href="../Input/input.html">Input &gt;</a></span>
+        </div>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script
+      src="https://kit.fontawesome.com/6bba1b5d71.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
