@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic - CSS Component Library</title>
+    <link href="../Homepage/homepage.css" rel="stylesheet" />
+    <link href="../Component-Page/component-page.css" rel="stylesheet" />
+    <link href="input.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-logo"><a href="../index.html">magic!</a></div>
+        <nav class="header-navbar">
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Examples</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="page-body">
+        <aside class="page-sidebar">
+          <div class="sidebar-topic">Get Started</div>
+          <ul class="sidebar-subtopic">
+            <li><a href="../Homepage/homepage.html">Introduction</a></li>
+            <li><a href="#">Guide</a></li>
+            <li><a href="#">The Magician</a></li>
+          </ul>
+          <div class="sidebar-topic">Components</div>
+          <ul class="sidebar-subtopic">
+            <li><a href="../Alert/alert.html">Alerts</a></li>
+            <li><a href="../Avatar/avatar.html">Avatars</a></li>
+            <li><a href="../Badge/badge.html">Badges</a></li>
+            <li><a href="../Button/button.html">Buttons</a></li>
+            <li><a href="../Card/card.html">Cards</a></li>
+            <li><a href="../Image/image.html">Images</a></li>
+            <li><a href="../Input/input.html">Inputs</a></li>
+          </ul>
+        </aside>
+        <div class="page-content">
+          <h1>Inputs</h1>
+          <p>
+            Inputs are the way for your users to communicate with the website.
+          </p>
+
+          <h1 class="sub-heading">Login Inputs</h1>
+
+          <p>
+            Login inputs have a username and password field. We have designed an
+            error message as well which you can display accordingly.
+          </p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <div class="login-inputs">
+                <div>
+                  <label for="email">Username *</label>
+                  <input type="email" id="email" />
+                </div>
+                <div>
+                  <label id="password-label" for="password">Password *</label>
+                  <input type="password" id="password" />
+                  <div class="error-message">Wrong Password. Try again.</div>
+                </div>
+              </div>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"login-inputs"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"email"</span>&gt;</span>Username *<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"email"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"password-label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"password"</span>&gt;</span>Password *<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"password"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"error-message"</span>&gt;</span>Wrong Password. Try again.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <h1 class="sub-heading">Radio Inputs</h1>
+
+          <p>
+            Radio inputs are used when there is only one possible answer to a
+            question.
+          </p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <div class="radio-input-group">
+                <div>
+                  <label for="checked-radio">Checked</label
+                  ><input checked id="checked-radio" type="radio" />
+                </div>
+                <div>
+                  <label for="unchecked-radio">Unchecked</label
+                  ><input id="unchecked-radio" type="radio" />
+                </div>
+                <div>
+                  <label for="disabled-radio">Disabled</label
+                  ><input disabled id="disabled-radio" type="radio" />
+                </div>
+              </div>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"radio-input-group"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"checked-radio"</span>&gt;</span>Checked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>
+    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">checked</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"checked-radio"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"unchecked-radio"</span>&gt;</span>Unchecked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>
+    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"unchecked-radio"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"disabled-radio"</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>
+    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"disabled-radio"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <h1 class="sub-heading">Checkbox Inputs</h1>
+
+          <p>
+            Checkbox inputs are used when there is a possibility of multiple
+            answers to a question.
+          </p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <div class="checkbox-input-group">
+                <div>
+                  <label for="checked-checkbox">Checked</label
+                  ><input checked id="checked-checkbox" type="checkbox" />
+                </div>
+                <div>
+                  <label for="unchecked-checkbox">Unchecked</label
+                  ><input id="unchecked-checkbox" type="checkbox" />
+                </div>
+                <div>
+                  <label for="disabled-checkbox">Disabled</label
+                  ><input disabled id="disabled-checkbox" type="checkbox" />
+                </div>
+              </div>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"checkbox-input-group"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"checked-checbox"</span>&gt;</span>Checked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>
+    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">checked</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"checked-checkbox"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"unchecked-checkbox"</span>&gt;</span>Unchecked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>
+    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"unchecked-checkbox"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"disabled-checkbox"</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>
+    &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"disabled-checkbox"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <span class="last"
+            ><a href="../Image/image.html">&lt; Images</a></span
+          >
+          <span class="next"><a href="#">End &gt;</a></span>
+        </div>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script
+      src="https://kit.fontawesome.com/6bba1b5d71.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
