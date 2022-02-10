@@ -163,12 +163,13 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x: scroll;
     background-color: var(--code-example-bg);
     color: silver;
     border-radius: 5px;
     margin-top: -1rem;
     margin-bottom: 3rem;
-    padding: 1rem 0;
+    padding: 15px 0;
 }
 
 /* STYLING THE BOTTOM NAVIGATION */
@@ -179,7 +180,6 @@ ul {
     bottom: 0;
     font-weight: 700;
 }
-
 
 .page-content .next {
     position: absolute;

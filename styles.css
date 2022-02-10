@@ -1,0 +1,145 @@
+/* GENERIC BODY STYLING */
+
+:root {
+    --body-bg: #0a0a0a;
+    --body-color: whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--body-color);
+    font-family: 'Nunito', sans-serif;
+}
+
+/* STYLING FOR THE HEADER */
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 3rem;
+    height: max-content;
+}
+
+.header-logo {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-navbar {
+    margin-left: auto;
+}
+
+.header-navbar>ul {
+    display: flex;
+    gap: 2rem;
+    font-weight: bold;
+}
+
+/* STYLING THE CONTENT OF THE WELCOME PAGE */
+
+.welcome-container {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.welcome-container ul {
+    list-style-type: none;
+}
+
+.welcome-container a {
+    text-decoration: none;
+    position: relative;
+    color: var(--body-color);
+}
+
+.welcome-section {
+    width: 100%;
+    margin: 8rem auto 0 auto;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.welcome-section p {
+    font-size: 1.5rem;
+    margin: 1.5rem auto;
+    width: 60%;
+}
+
+.welcome-section button {
+    border: none;
+    width: 11.25rem;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    background-color: var(--body-color);
+    color: var(--body-bg);
+    margin: 20px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.welcome-section i {
+    color: var(--body-bg);
+    background-color: var(--body-color);
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 888px) {
+    .welcome-container {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .welcome-section {
+        margin: 6rem auto 0 auto;
+    }
+
+    .welcome-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .welcome-section p {
+        font-size: 1.2rem;
+        margin: 3rem auto;
+        width: 70%;
+    }
+
+    .welcome-section button {
+        width: 9rem;
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+
+    .welcome-section i {
+        margin-right: 0.75rem;
+    }
+
+    .header-navbar>ul {
+        display: flex;
+        gap: 1rem;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 473px) {
+    .welcome-section h1 {
+        font-size: 1.3rem;
+    }
+
+    .welcome-section p {
+        width: 100%;
+    }
+}

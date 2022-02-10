@@ -7,7 +7,7 @@
     <title>Magic - CSS Component Library</title>
     <link href="../Homepage/homepage.css" rel="stylesheet" />
     <link href="../Component-Page/component-page.css" rel="stylesheet" />
-    <link href="toast.css" rel="stylesheet" />
+    <link href="image.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,13 +27,8 @@
         <div class="header-logo"><a href="../index.html">magic!</a></div>
         <nav class="header-navbar">
           <ul>
-            <li><a href="../Alert/alert.html">Docs</a></li>
-            <li>
-              <a
-                href="https://github.com/tejas-muthya37/magic-library/tree/main#readme"
-                >Releases</a
-              >
-            </li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Examples</a></li>
             <li><a href="#">Reviews</a></li>
           </ul>
         </nav>
@@ -43,8 +38,8 @@
           <div class="sidebar-topic">Get Started</div>
           <ul class="sidebar-subtopic">
             <li><a href="../Homepage/homepage.html">Introduction</a></li>
-            <li><a href="../Homepage/homepage.html">Guide</a></li>
-            <li><a href="#">The Team</a></li>
+            <li><a href="#">Guide</a></li>
+            <li><a href="#">The Magician</a></li>
           </ul>
           <div class="sidebar-topic">Components</div>
           <ul class="sidebar-subtopic">
@@ -55,66 +50,67 @@
             <li><a href="../Card/card.html">Cards</a></li>
             <li><a href="../Image/image.html">Images</a></li>
             <li><a href="../Input/input.html">Inputs</a></li>
-            <li><a href="../Lists/lists.html">Lists</a></li>
-            <li><a href="../Text/text.html">Text Utilities</a></li>
-            <li><a href="../Toast/toast.html">Toast</a></li>
           </ul>
         </aside>
         <div class="page-content">
-          <h1>Toasts</h1>
-          <p>Toasts can be used to show alerts to the user.</p>
-
-          <h1 class="sub-heading">Success Toast</h1>
-
+          <h1>Images</h1>
           <p>
-            Success Toast can be used to inform the user about a positive
-            outcome of an event.
+            Images can add great value to the aesthetics of a website. Use the
+            .image class to add our images to your website.
           </p>
+
+          <h1 class="sub-heading">Simple Image</h1>
+
+          <p>A simple image of 150x150 pixels.</p>
 
           <div class="demo-with-code">
             <div class="demo-div">
-              <div class="toast toast-success">
-                We have received your order!
-              </div>
+              <img class="image" src="../Media/img-1.jpg" alt="" />
             </div>
 
             <pre class="code-examples">
               <code class="language-html">
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toast toast-success"</span>&gt;</span>
-    We have received your order!
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"&lt;your-image-url-here&gt;"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"img-1"</span> /&gt;</span>
             </code>
             </pre>
           </div>
 
-          <h1 class="sub-heading">Danger Toast</h1>
+          <h1 class="sub-heading">Circular Image</h1>
 
-          <p>
-            Danger Toast can be used to inform the user about a negative outcome
-            of an event.
-          </p>
+          <p>Circular images are often used as profile pictures.</p>
 
           <div class="demo-with-code">
             <div class="demo-div">
-              <div class="toast toast-danger">
-                Your request was not processed!
-              </div>
+              <img class="image circle" src="../Media/img-2.jpg" alt="" />
             </div>
 
             <pre class="code-examples">
               <code class="language-html">
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toast toast-danger"</span>&gt;</span>
-    Your request was not processed!
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image circle"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"&lt;your-image-url-here&gt;"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"img-2"</span> /&gt;</span>
             </code>
             </pre>
           </div>
-          <span class="last"
-            ><a href="../Text/text.html">&lt; Text Utilities</a></span
-          >
-          <span class="next"
-            ><a href="../Homepage/homepage.html">End &gt;</a></span
-          >
+
+          <h1 class="sub-heading">Resizable Image</h1>
+
+          <p>
+            Resizable images automatically change their height and width
+            according to the screen size.
+          </p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <img class="image resizable" src="../Media/img-3.jpg" alt="" />
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image resizable"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"&lt;your-image-url-here&gt;"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"img-3"</span> /&gt;</span>
+            </code>
+            </pre>
+          </div>
+          <span class="last"><a href="../Card/card.html">&lt; Cards</a></span>
+          <span class="next"><a href="../Input/input.html">Input &gt;</a></span>
         </div>
       </div>
     </div>
