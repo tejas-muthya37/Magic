@@ -1,0 +1,27 @@
+.text-utilities.heading {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.text-utilities.centered {
+    text-align: center;
+    margin: auto;
+}
+
+.text-utilities.grey {
+    color: silver;
+}
+
+.demo-div p.text-utilities {
+    margin-bottom: 0;
+}
+
+.demo-div {
+    flex-direction: column;
+}
+
+@media screen and (max-width: 585px) {
+    .demo-div {
+        align-items: flex-start;
+    }
+}
