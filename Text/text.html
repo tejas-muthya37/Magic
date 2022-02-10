@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic - CSS Component Library</title>
+    <link href="../Homepage/homepage.css" rel="stylesheet" />
+    <link href="../Component-Page/component-page.css" rel="stylesheet" />
+    <link href="text.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-logo"><a href="../index.html">magic!</a></div>
+        <nav class="header-navbar">
+          <ul>
+            <li><a href="../Alert/alert.html">Docs</a></li>
+            <li>
+              <a
+                href="https://github.com/tejas-muthya37/magic-library/tree/main#readme"
+                >Releases</a
+              >
+            </li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="page-body">
+        <aside class="page-sidebar">
+          <div class="sidebar-topic">Get Started</div>
+          <ul class="sidebar-subtopic">
+            <li><a href="../Homepage/homepage.html">Introduction</a></li>
+            <li><a href="../Homepage/homepage.html">Guide</a></li>
+            <li><a href="#">The Team</a></li>
+          </ul>
+          <div class="sidebar-topic">Components</div>
+          <ul class="sidebar-subtopic">
+            <li><a href="../Alert/alert.html">Alerts</a></li>
+            <li><a href="../Avatar/avatar.html">Avatars</a></li>
+            <li><a href="../Badge/badge.html">Badges</a></li>
+            <li><a href="../Button/button.html">Buttons</a></li>
+            <li><a href="../Card/card.html">Cards</a></li>
+            <li><a href="../Image/image.html">Images</a></li>
+            <li><a href="../Input/input.html">Inputs</a></li>
+            <li><a href="../Lists/lists.html">Lists</a></li>
+            <li><a href="../Text/text.html">Text Utilities</a></li>
+            <li><a href="../Toast/toast.html">Toast</a></li>
+          </ul>
+        </aside>
+        <div class="page-content">
+          <h1>Text Utilities</h1>
+          <p>Can't do without showing text to your user, can you?</p>
+
+          <h1 class="sub-heading">Headings</h1>
+
+          <p>Headings often signify the start of a particular section.</p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <h1 class="text-utilities heading">
+                h1. This is a &lt;h1/&gt; heading.
+              </h1>
+              <h2 class="text-utilities heading">
+                h2. This is a &lt;h2/&gt; heading.
+              </h2>
+              <h3 class="text-utilities heading">
+                h3. This is a &lt;h3/&gt; heading.
+              </h3>
+              <h4 class="text-utilities heading">
+                h4. This is a &lt;h4/&gt; heading.
+              </h4>
+              <h5 class="text-utilities heading">
+                h5. This is a &lt;h5/&gt; heading.
+              </h5>
+              <h6 class="text-utilities heading">
+                h6. This is a &lt;h6/&gt; heading.
+              </h6>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-utilities heading"</span>&gt;</span>
+    h1. This is a &lt;h1/&gt; heading.
+<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-utilities heading"</span>&gt;</span>
+    h2. This is a &lt;h2/&gt; heading.
+<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-utilities heading"</span>&gt;</span>
+    h3. This is a &lt;h3/&gt; heading.
+<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-utilities heading"</span>&gt;</span>
+    h4. This is a &lt;h4/&gt; heading.
+<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-utilities heading"</span>&gt;</span>
+    h5. This is a &lt;h5/&gt; heading.
+<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h6</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-utilities heading"</span>&gt;</span>
+    h6. This is a &lt;h6/&gt; heading.
+<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <h1 class="sub-heading">Small Text</h1>
+
+          <p>
+            Small Text is used when there are multiple lines of information.
+          </p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <p class="text-utilities">This is an example of a small text.</p>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-utilities"</span>&gt;</span>This is an example of a small text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <h1 class="sub-heading">Centered Text</h1>
+
+          <p>
+            Centered Text is always placed at the exact center of the screen.
+          </p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <p class="text-utilities centered">
+                This is an example of a centered text.
+              </p>
+              <p class="text-utilities centered">Centered text.</p>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-utilities centered"</span>&gt;</span>This is an example of a centered text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <h1 class="sub-heading">Grey Text</h1>
+
+          <p>Grey Text usually signifies something that is disabled.</p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <p class="text-utilities grey">
+                This is an example of a grey text.
+              </p>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-utilities grey"</span>&gt;</span>This is an example of a grey text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <span class="last"><a href="../Lists/lists.html">&lt; Lists</a></span>
+          <span class="next"><a href="../Toast/toast.html">Toast &gt;</a></span>
+        </div>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script
+      src="https://kit.fontawesome.com/6bba1b5d71.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
