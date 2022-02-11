@@ -163,7 +163,6 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-x: scroll;
     background-color: var(--code-example-bg);
     color: silver;
     border-radius: 5px;

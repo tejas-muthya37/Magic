@@ -1,6 +1,77 @@
 :root {
     --hover-bg: #F0F0F0;
     --anchor-hover-bg: #F0EFFF;
+    --near-black: #0a0a0a;
+    --near-white: whitesmoke;
+}
+
+/* STYLING FOR E-COMMERCE CARDS */
+
+.card-e-commerce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    background-color: whitesmoke;
+    color: var(--near-black);
+    border-radius: 5px;
+}
+
+p.item-title,
+p.item-price-string {
+    margin-bottom: 0;
+    line-height: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.card-e-commerce .item-image {
+    width: 40%;
+    height: 60%;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.item-author {
+    font-size: 0.8rem;
+    color: var(--secondary-color)
+}
+
+.item-price {
+    font-size: 1.2rem;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.button-group button {
+    height: 40px;
+    border: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 12rem;
+    border-radius: 2px;
+}
+
+.button-group button.btn-wishlist,
+.button-group button.btn-cart {
+    background-color: var(--near-black);
+    color: var(--near-white);
 }
 
 /* FOR CARDS WITH SHADOWS */
@@ -141,7 +212,7 @@ i:nth-of-type(3) {
 
 /* STYLING THE BADGE */
 
-.badge {
+.card-badge {
     font-size: 0.8rem;
     background-color: green;
     height: max-content;
@@ -281,9 +352,9 @@ i:nth-of-type(3) {
         margin-top: 0.8rem;
     }
 
-    .badge {
+    .card-badge {
         position: absolute;
-        bottom: -1.6rem;
+        bottom: -1.45rem;
         left: 0;
         font-size: 0.7rem;
         width: 5rem;
@@ -299,5 +370,9 @@ i:nth-of-type(3) {
 
     .card-horizontal .img-horizontal {
         width: 100%;
+    }
+
+    .button-group button {
+        width: 10rem;
     }
 }
