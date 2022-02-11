@@ -3,6 +3,7 @@
 :root {
     --body-bg: #0a0a0a;
     --body-color: whitesmoke;
+    --body-font: 'Nunito', sans-serif;
 }
 
 * {
@@ -14,7 +15,7 @@
 body {
     background-color: var(--body-bg);
     color: var(--body-color);
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--body-font);
 }
 
 /* STYLING FOR THE HEADER */
@@ -89,6 +90,7 @@ body {
     margin: 20px 10px;
     cursor: pointer;
     font-weight: bold;
+    font-family: var(--body-font);
 }
 
 .welcome-section i {
