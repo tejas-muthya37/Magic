@@ -3,6 +3,7 @@
     --anchor-hover-bg: #F0EFFF;
     --near-black: #0a0a0a;
     --near-white: whitesmoke;
+    --body-font: 'Nunito', sans-serif;
 }
 
 /* STYLING FOR E-COMMERCE CARDS */
@@ -66,6 +67,7 @@ p.item-price-string {
     cursor: pointer;
     width: 12rem;
     border-radius: 2px;
+    font-family: var(--body-font);
 }
 
 .button-group button.btn-wishlist,
