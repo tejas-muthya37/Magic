@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@400;700;800&display=swap');
+
+@import url("Alert/alert.css");
+@import url("Avatar/avatar.css");
+@import url("Badge/badge.css");
+@import url("Button/button.css");
+@import url("Card/card.css");
+@import url("Image/image.css");
+@import url("Input/input.css");
+@import url("Lists/lists.css");
+@import url("Text/text.css");
+@import url("Toast/toast.css");
