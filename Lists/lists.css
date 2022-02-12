@@ -2,7 +2,7 @@
     --border-color: #BEBEBE;
 }
 
-.drawer-container .nav-items * {
+.list .nav-items * {
     color: black;
 }
 
@@ -19,15 +19,15 @@
     font-size: 0.9rem;
 }
 
-.drawer-container header h3 {
+.list header h3 {
     letter-spacing: 0.02rem;
     padding-bottom: 0.6rem;
     border-bottom: 1px solid var(--border-color);
     color: black;
 }
 
-.drawer-container header h3,
-.drawer-container ul {
+.list header h3,
+.list ul {
     padding: 1rem;
 }
 
@@ -35,14 +35,14 @@
     text-decoration: none;
 }
 
-.drawer-container {
+.list {
     width: 15rem;
     margin: 6rem auto;
     background-color: whitesmoke;
     border-radius: 2px;
 }
 
-.drawer-container label {
+.list label {
     margin-left: 0.75rem;
 }
 
@@ -50,21 +50,21 @@
     padding-left: 2rem;
 }
 
-.drawer-container.stacked li {
+.list.stacked li {
     padding-left: 1rem;
     border-bottom: 1px solid var(--border-color);
     height: 2.5rem;
     margin-bottom: 0;
 }
 
-.drawer-container.stacked li:nth-of-type(3) {
+.list.stacked li:nth-of-type(3) {
     border-bottom: none;
 }
 
-.drawer-container.stacked ul {
+.list.stacked ul {
     padding: 0;
 }
 
-.drawer-container.stacked ul li i {
+.list.stacked ul li i {
     margin-right: 0.5rem;
 }

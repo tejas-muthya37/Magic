@@ -2,6 +2,7 @@
     --demo-div-bg: #282c34;
     --code-example-bg: #282c34;
     --body-color: whitesmoke;
+    --primary-class: greenyellow;
 }
 
 h1.sub-heading {
@@ -39,6 +40,10 @@ h1.sub-heading {
     width: 100%;
     background-color: var(--code-example-bg);
     border-radius: 5px;
+}
+
+.primary-class {
+    color: var(--primary-class);
 }
 
 @media screen and (max-width: 820px) {
