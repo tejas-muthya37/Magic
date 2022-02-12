@@ -44,6 +44,7 @@ h1.sub-heading {
 
 .primary-class {
     color: var(--primary-class);
+    font-weight: bold;
 }
 
 @media screen and (max-width: 820px) {
