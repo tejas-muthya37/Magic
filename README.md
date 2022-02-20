@@ -36,7 +36,7 @@ The components that Magic includes in it's v1.0 is as follows :-
 
 3. Scroll down to the 'Guide'.
 
-4. Copy the installation link given in the Guide into the <head> of your source HTML file.
+4. Copy the installation link given in the Guide into the '<head>' tag of your source HTML file.
   
 5. Browse the website and copy the code for your favourite components to achieve Magic!
 
