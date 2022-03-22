@@ -28,6 +28,18 @@ The components that Magic includes in it's v1.0 is as follows :-
 
 ⏩ Inputs
 
+# How to use Magic? ✨
+
+1. Go to https://magic-library.netlify.app/
+
+2. Click on 'Get Started' to go to the Introduction Page.
+
+3. Scroll down to the 'Guide'.
+
+4. Copy the installation link given in the Guide into the head tag of your source HTML file.
+  
+5. Browse the website and copy the code for your favourite components to achieve Magic!
+
 Magic v1.1 - Coming soon, with more kickass components! 🔥
 
 
