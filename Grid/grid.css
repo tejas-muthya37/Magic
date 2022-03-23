@@ -1,0 +1,17 @@
+.grid {
+    display: grid;
+    width: 100%;
+}
+
+.grid-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.subgrid {
+    border: 1px solid whitesmoke;
+    padding: 0.5rem;
+}
