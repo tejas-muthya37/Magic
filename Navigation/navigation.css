@@ -1,0 +1,85 @@
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0.5rem 2rem;
+    margin: 3rem auto;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.navbar h3 {
+    font-size: 1.25rem;
+}
+
+.navbar i {
+    cursor: pointer;
+}
+
+.print-icon {
+    -webkit-text-stroke: 1px black;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.navbar-left i {
+    margin-right: 2rem;
+}
+
+/* COLLAPSED NAVBAR */
+
+.collapsed {
+    width: max-content;
+    border-bottom-right-radius: 2rem;
+}
+
+.collapsed .navbar-left i {
+    margin-left: 0;
+}
+
+.collapsed .navbar-right i {
+    margin: 0;
+}
+
+.prominent-dense {
+    flex-wrap: nowrap;
+}
+
+.prominent-dense .navbar-left,
+.prominent-dense .navbar-right {
+    height: 6.25rem;
+    align-items: flex-start;
+    padding-top: 1.25rem;
+}
+
+.prominent-dense h3 {
+    margin-top: auto;
+    padding-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar:not(.prominent-dense) h3 {
+        display: none;
+    }
+
+    .prominent-dense .navbar-left {
+        flex-direction: column;
+    }
+}

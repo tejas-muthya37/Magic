@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic - CSS Component Library</title>
+    <link rel="icon" href="../Media/icon.png" />
+    <link href="../Homepage/homepage.css" rel="stylesheet" />
+    <link href="../Component-Page/component-page.css" rel="stylesheet" />
+    <link href="modal.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-logo"><a href="../index.html">magic!</a></div>
+        <nav class="header-navbar">
+          <ul>
+            <li><a href="../Alert/alert.html">Docs</a></li>
+            <li>
+              <a href="https://github.com/tejas-muthya37/Magic/tree/dev/#readme"
+                >Releases</a
+              >
+            </li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="page-body">
+        <aside class="page-sidebar">
+          <div class="sidebar-topic">Get Started</div>
+          <ul class="sidebar-subtopic">
+            <li><a href="../Homepage/homepage.html">Introduction</a></li>
+            <li><a href="../Homepage/homepage.html">Guide</a></li>
+            <li><a href="#">The Team</a></li>
+          </ul>
+          <div class="sidebar-topic">Components</div>
+          <ul class="sidebar-subtopic">
+            <li><a href="../Alert/alert.html">Alerts</a></li>
+            <li><a href="../Avatar/avatar.html">Avatars</a></li>
+            <li><a href="../Badge/badge.html">Badges</a></li>
+            <li><a href="../Button/button.html">Buttons</a></li>
+            <li><a href="../Card/card.html">Cards</a></li>
+            <li><a href="../Image/image.html">Images</a></li>
+            <li><a href="../Input/input.html">Inputs</a></li>
+            <li><a href="../Lists/lists.html">Lists</a></li>
+            <li><a href="../Modal/modal.html">Modals</a></li>
+            <li><a href="../Navigation/navigation.html">Navigation</a></li>
+            <li><a href="../Text/text.html">Text Utilities</a></li>
+            <li><a href="../Toast/toast.html">Toast</a></li>
+          </ul>
+        </aside>
+        <div class="page-content">
+          <h1>Modals</h1>
+          <p>
+            A Modal is a graphical control element that pops up over the
+            application's main window. Use the
+            <span class="primary-class">.modal</span> class to use our Modals in
+            your website.
+          </p>
+
+          <h1 class="sub-heading">Simple Modal</h1>
+
+          <p>A Simple Modal has a Modal Header and a Modal Text.</p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <div class="modal-container">
+                <header class="modal-header">Modal header</header>
+                <p class="modal-text">Modal body text</p>
+                <footer class="modal-footer">
+                  <button>ACTION 1</button>
+                  <button>ACTION 2</button>
+                </footer>
+              </div>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-container"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-header"</span>&gt;</span>Modal header<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-text"</span>&gt;</span>Modal body text<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-footer"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>ACTION 1<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>ACTION 2<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <h1 class="sub-heading">Scrolling Modal</h1>
+
+          <p>
+            Scrolling Modals are used when the Modal Text is a long paragraph.
+          </p>
+
+          <div class="demo-with-code">
+            <div class="demo-div">
+              <div class="modal-container scrolling-container">
+                <header class="modal-header">Modal header</header>
+                <p class="modal-text">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomised words which don't look
+                  even slightly believable. If you are going to use a passage of
+                  Lorem Ipsum, you need to be sure there isn't anything
+                  embarrassing hidden in the middle of text. All the Lorem Ipsum
+                  generators on the Internet tend to repeat predefined chunks as
+                  necessary, making this the first true generator on the
+                  Internet. It uses a dictionary of over 200 Latin words,
+                  combined with a handful of model sentence structures, to
+                  generate Lorem Ipsum which looks reasonable. The generated
+                  Lorem Ipsum is therefore always free from repetition, injected
+                  humour, or non-characteristic words etc.
+                </p>
+                <footer class="modal-footer">
+                  <button>ACTION 1</button>
+                  <button>ACTION 2</button>
+                </footer>
+              </div>
+            </div>
+
+            <pre class="code-examples">
+              <code class="language-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-container scrolling-container"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-header"</span>&gt;</span>Modal header<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-text"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">your-text-here</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"modal-footer"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>ACTION 1<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>ACTION 2<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            </code>
+            </pre>
+          </div>
+
+          <span class="last"><a href="../Lists/lists.html">&lt; Lists</a></span>
+          <span class="next"
+            ><a href="../Navigation/navigation.html">Navigation &gt;</a></span
+          >
+        </div>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script
+      src="https://kit.fontawesome.com/6bba1b5d71.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+.modal-container {
+    background-color: whitesmoke;
+    width: 15rem;
+    max-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 2px;
+    height: max-content;
+}
+
+.modal-container>.modal-header {
+    margin-bottom: 1.25rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+
+.modal-container>.modal-text {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    color: grey;
+}
+
+.modal-container .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-footer button {
+    background-color: whitesmoke;
+    color: rebeccapurple;
+    border: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    width: max-content;
+    cursor: pointer;
+}
+
+.modal-footer button:nth-child(2) {
+    margin-left: 2rem;
+}
+
+.modal-container.scrolling-container {
+    width: 30rem;
+}
+
+.scrolling-container p {
+    overflow-y: scroll;
+    padding-right: 2rem;
+    line-height: 1.75rem;
+}
