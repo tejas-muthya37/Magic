@@ -38,7 +38,7 @@ The components that Magic includes in it's v1.0 is as follows :-
 2. Fork the Magic repository onto your Github repository.
 3. Copy the SSH link.
 4. Open the CMD and navigate to the folder in which you want to run Magic.
-5. Run the command 'git clone <Enter the SSH copied from forked repository>'.
+5. Run the command git clone 'Enter the SSH copied from forked repository'.
 6. The source code of Magic should now be present on your local machine.
 
   
