@@ -3,21 +3,22 @@
 Magic is a Component Library for developers who do want to spend time styling their components.  
 We let the user browse through our library and copy the code for whatever component meets their requirements.
 
-The components that Magic includes in it's v1.0 is as follows :-
+The components that Magic includes in it's v1.1 is as follows :-
 
 ⏩ Alerts
-
 ⏩ Avatars
-
 ⏩ Badges
-
 ⏩ Buttons
-
 ⏩ Cards
-
+⏩ Grids
 ⏩ Images
-
 ⏩ Inputs
+⏩ Lists
+⏩ Reviews
+⏩ Modals
+⏩ Navigation
+⏩ Text Utilities
+⏩ Toast
 
 # How to use Magic? ✨
 
